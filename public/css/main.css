@@ -7,3 +7,24 @@
 .navbar-brand {
     float:none;
 }
+
+.icon-size{
+	width: 30;
+	height: 30;
+}
+
+.btn-history{
+	background-image:url(icons/history.svg) no-repeat center;
+	background-width:16px;
+	background-height:16px;
+}
+
+.inner
+{
+    display: inline-block;
+}
+#outer
+{
+    width:100%;
+    text-align: center;
+}

@@ -16,33 +16,33 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#" style="text-align:center"><h1>hApp</h1></a>
+			<a href="home" class="float-left icon-size" href="#">
+				<button type="button" class="btn btn-lg">
+					<img src="icons/home.svg" height="35"/>
+				</button></a>
+			<a class="float-right icon-size" href="#">
+				<button type="button" class="btn btn-lg">
+					<img src="icons/controls.svg" height="35"/>
+				</button></a>
 		</div>
 	</nav>
 
-	<div class="card" style="text-align:center; margin-top:1; margin-left:0; margin-right:0">
-		<img class="card-img-top" src="http://lorempixel.com/500/500/people"{
+	<div class="card" style="text-align:center; margin-top:0; margin-left:0; margin-right:0">
+		<img class="card-img-top" src="img/raccoon.png"{
 			border:1px solid #ddd; // Gray border
 			height:200px;
 		}>
 		<div class="card-body">
-			<h5 class="card-text">Pin Name</h5>
-			<h5 class="card-text">Distance</h5>
+			<h4 class="card-text text-left">Pin Name</h4>
+			<h5 class="card-text text-left">Distance</h5>
 			<p class="card-text">Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proidant, sunt in culpa qui officia deserunt.</p>
 		</div>
 	</div>
-	<div class="container" style="text-align:center;">
-		
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-				<a href="#event"><button type="button" class="btn btn-secondary"{
-					border-radius:50%;
-				}>Like</button></a>
-			</div>
-				
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-				<a href="#event"><button type="button" class="btn btn-secondary"{
-					border-radius:50%;
-				}>Dislike</button></a>
-			</div>
+	<div id="outer">
+		<div class="inner"><button type="button" class="btn btn-secondary">Back</button></div>
+		<div class="inner"><button type="button" class="btn btn-secondary">Like</button></div>
+		<div class="inner"><button type="button" class="btn btn-secondary">DISLIKE</button></div>
+		<div class="inner"><button type="button" class="btn btn-secondary"><img src="icons/ellipsis.svg" height="20"/></button></div>
 		</div>
 	</div>
 
