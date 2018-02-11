@@ -19,12 +19,11 @@
 		</div>
 	</nav>
 
-	<div class="container" style="text-align:center; padding-top: 12.5%">
+	<div class="container" style="text-align:center; padding-top: 5%">
 		<div class="row" style="padding-top:25px">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-			<input id="time" type="time">			
-		</div>
-	</div>
+				<strong>When will you be available?</strong>
+			</div>
 		
 		</div>
 	</div>
@@ -32,7 +31,24 @@
 	<div class="container" style="text-align:center; padding-top: 12.5%">
 		<div class="row" style="padding-top:25px">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-				<button type="button" class="btn btn-lg active">Google+</button>
+				<strong>From:</strong>
+				<input id="time" type="time" value="{{currentTime}}">			
+			</div>
+		</div>
+
+		<div class="row" style="padding-top:25px">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<strong>To:</strong>
+				<input id="time" type="time" value="{{currentTime}}">			
+			</div>
+		</div>
+			
+	</div>
+
+	<div class="container" style="text-align:center; padding-top: 12.5%">
+		<div class="row" style="padding-top:25px">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<button type="button" class="btn btn-lg active">GO</button>
 			</div>
 		
 		</div>
