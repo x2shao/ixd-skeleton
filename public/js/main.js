@@ -14,3 +14,7 @@ function turnToHomePage(e){
 }
 
 $(".btn-home-search).click();
+
+$('#input_starttime').pickatime({
+    twelvehour: true
+});
