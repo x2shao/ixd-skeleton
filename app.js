@@ -29,7 +29,7 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
 
 // development only
@@ -39,7 +39,8 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/home', home.view);
-app.get('/eventSearch', eventSearch.view);
+app.get('/eventSearch', (req, res) => { res.redirect("/eventSearch/0")})
+app.get('/eventSearch/:id', eventSearch.view);
 // Example route
 // app.get('/users', user.list);
 
