@@ -33,3 +33,47 @@
     height:300;
     overflow: hidden;
 }
+
+.login-box{
+    background-color: rgba(255,255,255,0.8);
+    width: 350px;
+    max-width: 90vw;
+    height: 487px;
+    padding: 2em;
+    border-radius: 0.25em;
+    margin: auto;
+}
+
+.home-page{
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://static.pexels.com/photos/531880/pexels-photo-531880.jpeg");
+}
+
+.login-row{
+    margin-top:2.5%;
+    margin-bottom: 2.5%
+}
+
+.btn.btn-lg.active.btn-facebook{
+    color:#FFF;
+    background-color: #3B5998;
+}
+
+.btn.btn-lg.active.btn-facebook:hover{
+    color: #3B5998;
+    background-color: rgba(153, 153, 153, 0.4);
+    border-color: rgba(153, 153, 153, 0.4);;
+}
+
+.btn.btn-lg.active.btn-google{
+    color:#FFF;
+    background-color: #DD4B39;
+}
+
+.btn.btn-lg.active.btn-google:hover{
+    color: #DD4B39;
+    background-color: rgba(153, 153, 153, 0.4);
+    border-color: rgba(153, 153, 153, 0.4);
+}
