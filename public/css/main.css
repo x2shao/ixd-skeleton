@@ -45,7 +45,7 @@
 }
 
 .home-page{
-    background-color: #000;
+    background-color: #000 !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("https://static.pexels.com/photos/531880/pexels-photo-531880.jpeg");
