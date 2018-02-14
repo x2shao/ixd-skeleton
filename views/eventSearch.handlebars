@@ -14,32 +14,36 @@
 	{{!-- Begin here (or replace this with any static code already written). --}}
 
 
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="max-height:100px">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#" style="text-align:center"><h1>hApp</h1></a>
-			<a href="/home" class="float-left icon-size" href="#">
+			<a href="/home" class="float-left" href="#">
 				<button type="button" class="btn btn-lg">
 					<img src="/static/icons/home.svg" height="35"/>
 				</button></a>
-			<a class="float-right icon-size" href="/wip">
+			<a class="float-right" href="/wip">
 				<button type="button" class="btn btn-lg">
 					<img src="/static/icons/controls.svg" height="35"/>
 				</button></a>
 		</div>
 	</nav>
 
-	<div class="card" style="text-align:center; margin-top:0; margin-left:0; margin-right:0">
-		<img class="card-img-top crop" src="/static/img/grey.jpg"/>
+	<div class="container" style="height:calc(100vh - 200px - 5pt)"><div class="card" style="text-align:center; margin-top:0; margin-left:0; margin-right:0; height:100%">
+		<img class="card-img-top crop img-responsive" src="/static/img/grey.jpg"/ style="height:75%">
 		<div class="card-body">
-			<h4 class="card-text text-left">Pin Name</h4>
-			<h5 class="card-text text-left">Distance</h5>
-			<p class="card-text">Fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proidant, sunt in culpa qui officia deserunt.</p>
+			<h4 class="card-text text-left">{{name}}</h4>
+			<h6 class="card-text text-left">{{distance}}</h6>
+			<p class="card-text text-left">{{description}}</p>
 		</div>
-	</div>
+	</div></div>
 	<div id="outer">
 		<a href="/wip"><button class="btn inner"><i class="fa fa-arrow-left"></i></button></a>
-		<a href="/wip"><button class="btn inner"><i class="fa fa-close"></i></button></a>
-		<a href="/wip"><div class="inner"><button type="button" class="btn btn-secondary"><img src="/static/icons/heart.svg" height="15"/></button></div></a>
+		&nbsp;&nbsp;&nbsp;
+		<a href="/wip"><button class="btn inner btn-circle btn-xl"><i class="fa fa-close"></i></button></a>
+		&nbsp;&nbsp;&nbsp;
+		<!--<a href="/wip"><div class="inner"><button type="button" class="btn btn-secondary btn-circle btn-xl"><img src="/static/icons/heart.svg" height="15"/></button></div></a>-->
+		<a href="/wip"><button class="btn inner btn-circle btn-xl"><i class="fa fa-heart" style="color:#000"></i></button></a>
+		&nbsp;&nbsp;&nbsp;
 		<a href="/wip"><div class="inner"><button type="button" class="btn btn-secondary"><img src="/static/icons/ellipsis.svg" height="20"/></button></div></a>
 	
 	</div>
