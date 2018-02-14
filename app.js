@@ -13,6 +13,7 @@ var home = require('./routes/home');
 var eventSearch = require('./routes/eventSearch');
 var wip = require('./routes/wip');
 var map = require('./routes/map');
+var spider = require('./routes/spider');
 // Example route
 // var user = require('./routes/user');
 
@@ -45,6 +46,7 @@ app.get('/eventSearch', (req, res) => { res.redirect("/eventSearch/0")});
 app.get('/eventSearch/:id', eventSearch.view);
 app.get('/wip',wip.view);
 app.get('/map',map.view);
+app.get('/spider', spider.view);
 // Example route
 // app.get('/users', user.list);
 
