@@ -1,7 +1,7 @@
 <html>
 
 <head>
-	<title>Test Page</title>
+	<title>hApp</title>
 
 	<link rel="stylesheet" href="/scripts/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/scripts/bootstrap-material-design/dist/css/bootstrap-material-design.css">
@@ -16,30 +16,38 @@
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="navbar-header">
 			<a class="navbar-brand" href="#" style="text-align:center"><h1>hApp</h1></a>
+			<a href="home" class="float-left icon-size" href="#">
+				<button type="button" class="btn btn-lg">
+					<img src="icons/home.svg" height="35"/>
+				</button></a>
+			<a class="float-right icon-size" href="#">
+				<button type="button" class="btn btn-lg">
+					<img src="icons/controls.svg" height="35"/>
+				</button></a>
 		</div>
 	</nav>
 
 	<div class="container" style="text-align:center; padding-top: 5%">
 		<div class="row" style="padding-top:25px">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 subtitle">
 				<strong>When will you be available?</strong>
 			</div>
 		
 		</div>
 	</div>
 
-	<div class="container" style="text-align:center; padding-top: 12.5%">
+	<div class="container" style="text-align:center; padding-top: 6.25%">
 		<div class="row" style="padding-top:25px">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 				<strong>From:</strong>
-				<input id="time" type="time" value="{{currentTime}}">			
+				<input id="startTime" type="time" value="{{currentTime}}">			
 			</div>
 		</div>
 
 		<div class="row" style="padding-top:25px">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
 				<strong>To:</strong>
-				<input id="time" type="time" value="{{currentTime}}">			
+				<input id="endTime" type="time" value="{{nextTime}}">			
 			</div>
 		</div>
 			
@@ -48,7 +56,7 @@
 	<div class="container" style="text-align:center; padding-top: 12.5%">
 		<div class="row" style="padding-top:25px">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-				<button type="button" class="btn btn-lg active">GO</button>
+				<a href="feelingSelect"><button type="button" class="btn btn-lg active">GO</button></a>
 			</div>
 		
 		</div>
@@ -60,6 +68,7 @@
 	<script src="/scripts/popper.js/dist/umd/popper.js"></script>
 	<script src="/scripts/bootstrap-material-design/dist/js/bootstrap-material-design.js"></script>
 	<script src="js/main.js"></script>
+	<script type="text/javascript" src="date.js"></script>
 </body>
 
 
