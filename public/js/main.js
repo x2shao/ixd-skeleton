@@ -4,19 +4,15 @@ $(document).ready(() => {
     console.log("javascript loaded");
 })
 
-/*
-$(".btn btn-lg active").click(turnToHomePage);
-
-function turnToHomePage(e){
-	e.preventDefault();
-	var name = anagrammedName( $(this).text() );
-	$(this).text('name');
-}
-
-$(".btn-home-search").click();
-*/
 $("#login").click(goToLogIn);
 $("#signup").click(goToSignUp);
+$("button.uninterested").click((e) => {
+	e.preventDefault();
+	let splitPath = window.location.pathname.split('/');
+	let id = parseInt(splitPath[splitPath.length - 1]) + 1;
+	console.log(id);
+	$(location).attr('href', '/eventSearch/' + id);
+});
 
 
 function goToLogIn(){

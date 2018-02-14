@@ -11,6 +11,42 @@
             "distance" : "10 mile",
             "description" : "This is another example Event",
             "imageURL" : "This is another example image url"
+        },
+        { 
+            "name" : "event3",
+            "distance" : "10 mile",
+            "description" : "This is another example Event",
+            "imageURL" : "This is another example image url"
+        },
+        { 
+            "name" : "event4",
+            "distance" : "10 mile",
+            "description" : "This is another example Event",
+            "imageURL" : "This is another example image url"
+        },
+        { 
+            "name" : "event5",
+            "distance" : "10 mile",
+            "description" : "This is another example Event",
+            "imageURL" : "This is another example image url"
+        },
+        { 
+            "name" : "event6",
+            "distance" : "10 mile",
+            "description" : "This is another example Event",
+            "imageURL" : "This is another example image url"
+        },
+        { 
+            "name" : "event7",
+            "distance" : "10 mile",
+            "description" : "This is another example Event",
+            "imageURL" : "This is another example image url"
+        },
+        { 
+            "name" : "event8",
+            "distance" : "10 mile",
+            "description" : "This is another example Event",
+            "imageURL" : "This is another example image url"
         }
     ]
 }
