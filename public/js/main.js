@@ -1,7 +1,7 @@
 'use strict';
 
 $(document).ready(() => {
-    console.log("javascript loaded");
+	console.log("javascript loaded");
 })
 
 $("#login").click(goToLogIn);
@@ -14,8 +14,16 @@ $("button.uninterested").click((e) => {
 	$(location).attr('href', '/eventSearch/' + id);
 });
 
+function myMap() {
+	var map = new GMaps({
+		el: '#map',
+		lat: -12.043333,
+		lng: -77.028333
+	  });
+}
 
-function goToLogIn(){
+
+function goToLogIn() {
 	event.preventDefault();
 	console.log("login clicked");
 	$("div.login-box").replaceWith('<div class="login-box page-two">\
@@ -64,7 +72,7 @@ function goToLogIn(){
 		</div>');
 }
 
-function goToSignUp(){
+function goToSignUp() {
 	event.preventDefault();
 	console.log("signup clicked");
 	$("div.login-box").replaceWith('<div class="login-box page-two">\

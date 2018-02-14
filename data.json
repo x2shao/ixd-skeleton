@@ -1,52 +1,52 @@
 {
     "events" : [
         { 
-            "name" : "event1",
+            "name" : "Raccoon Spotted",
             "distance" : "1 mile",
-            "description" : "This is an example Event",
-            "imageURL" : "This is an example image url"
+            "description" : "Raccoons have been spotted in Warren!",
+            "imageURL" : "/static/img/raccoon.jpg"
         },
         { 
-            "name" : "event2",
-            "distance" : "10 mile",
-            "description" : "This is another example Event",
-            "imageURL" : "This is another example image url"
+            "name" : "Banquet",
+            "distance" : "7 mile",
+            "description" : "Open Banquet, everyone is invited... apparently",
+            "imageURL" : "/static/img/banquet.jpg"
         },
         { 
-            "name" : "event3",
+            "name" : "Beach Day",
             "distance" : "10 mile",
-            "description" : "This is another example Event",
-            "imageURL" : "This is another example image url"
+            "description" : "Join us for a BBQ at the beach!",
+            "imageURL" : "/static/img/beach_event.jpg"
         },
         { 
-            "name" : "event4",
-            "distance" : "10 mile",
-            "description" : "This is another example Event",
-            "imageURL" : "This is another example image url"
+            "name" : "Free Concert",
+            "distance" : "13 mile",
+            "description" : "Free concert!!!11!!1!",
+            "imageURL" : "/static/img/concert.jpg"
         },
         { 
-            "name" : "event5",
-            "distance" : "10 mile",
-            "description" : "This is another example Event",
-            "imageURL" : "This is another example image url"
+            "name" : "Bonfire!",
+            "distance" : "8 mile",
+            "description" : "SMORES!",
+            "imageURL" : "/static/img/la_jolla_bonfire.jpg"
         },
         { 
-            "name" : "event6",
-            "distance" : "10 mile",
-            "description" : "This is another example Event",
-            "imageURL" : "This is another example image url"
+            "name" : "Study session for midterms",
+            "distance" : "1 mile",
+            "description" : "It's week 7, we're dying here!",
+            "imageURL" : "/static/img/study_at_geisel.jpg"
         },
         { 
-            "name" : "event7",
-            "distance" : "10 mile",
-            "description" : "This is another example Event",
-            "imageURL" : "This is another example image url"
+            "name" : "Lan Party",
+            "distance" : "24 mile",
+            "description" : "BYOC",
+            "imageURL" : "/static/img/lan_party.jpg"
         },
         { 
-            "name" : "event8",
-            "distance" : "10 mile",
-            "description" : "This is another example Event",
-            "imageURL" : "This is another example image url"
+            "name" : "SDHacks",
+            "distance" : "4 mile",
+            "description" : "Let's build cool things!",
+            "imageURL" : "/static/img/hackathon.jpg"
         }
     ]
 }
