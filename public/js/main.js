@@ -6,20 +6,14 @@ $(document).ready(() => {
 
 $("#login").click(goToLogIn);
 $("#signup").click(goToSignUp);
-$("button.uninterested").click((e) => {
-	e.preventDefault();
+$("button.uninterested").click(cycleThroughEvents);
+
+function cycleThroughEvents(event){
+	event.preventDefault();
 	let splitPath = window.location.pathname.split('/');
 	let id = parseInt(splitPath[splitPath.length - 1]) + 1;
 	console.log(id);
 	$(location).attr('href', '/eventSearch/' + id);
-});
-
-function myMap() {
-	var map = new GMaps({
-		el: '#map',
-		lat: -12.043333,
-		lng: -77.028333
-	  });
 }
 
 

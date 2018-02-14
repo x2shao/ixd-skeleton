@@ -39,10 +39,7 @@
 	<div id="outer">
 		<a href="/wip"><button class="btn inner"><i class="fa fa-arrow-left"></i></button></a>
 		&nbsp;&nbsp;&nbsp;
-		<a href="/wip"><button class="btn inner btn-circle btn-xl uninterested"><i class="fa fa-close"></i></button></a>
-		&nbsp;&nbsp;&nbsp;
-		<!--<a href="/wip"><div class="inner"><button type="button" class="btn btn-secondary btn-circle btn-xl"><img src="/static/icons/heart.svg" height="15"/></button></div></a>-->
-		<a href="/wip"><button class="btn inner btn-circle btn-xl"><i class="fa fa-heart" style="color:#000"></i></button></a>
+		<a href="/wip"><button class="btn inner btn-circle btn-xl"><i class="fa fa-share-alt"></i></button></a>
 		&nbsp;&nbsp;&nbsp;
 		<a href="/wip"><div class="inner"><button type="button" class="btn btn-secondary"><img src="/static/icons/ellipsis.svg" height="20"/></button></div></a>
 	
@@ -57,7 +54,8 @@
 	{{!-- In order for maps to work, the order must be: 1) gmaps, 2) main.js, 3) googleapis link with the key --}}
 	<script src="/static/js/gmaps.js"></script>
 	<script src="/static/js/main.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key={{key}}&callback=myMap"></script>
+	<script src="/static/js/mapView.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key={{key}}"></script>
 	 
 </body>
 
