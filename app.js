@@ -43,7 +43,7 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/home', home.view);
 app.get('/eventSearch', (req, res) => { res.redirect("/eventSearch/0")});
-app.get('/eventSearch/:id', eventSearch.view);
+app.get('/eventSearch/:id([0-9])', eventSearch.view);
 app.get('/wip',wip.view);
 app.get('/map',map.view);
 app.get('/spider', spider.view);
