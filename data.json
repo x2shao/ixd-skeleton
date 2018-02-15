@@ -1,0 +1,52 @@
+{
+    "events" : [
+        { 
+            "name" : "Raccoon Spotted",
+            "distance" : "1 mile",
+            "description" : "Raccoons have been spotted in Warren!",
+            "imageURL" : "/static/img/raccoon.jpg"
+        },
+        { 
+            "name" : "Banquet",
+            "distance" : "7 mile",
+            "description" : "Open Banquet, everyone is invited... apparently",
+            "imageURL" : "/static/img/banquet.jpg"
+        },
+        { 
+            "name" : "Beach Day",
+            "distance" : "10 mile",
+            "description" : "Join us for a BBQ at the beach!",
+            "imageURL" : "/static/img/beach_event.jpg"
+        },
+        { 
+            "name" : "Free Concert",
+            "distance" : "13 mile",
+            "description" : "Free concert!!!11!!1!",
+            "imageURL" : "/static/img/concert.jpg"
+        },
+        { 
+            "name" : "Bonfire!",
+            "distance" : "8 mile",
+            "description" : "SMORES!",
+            "imageURL" : "/static/img/la_jolla_bonfire.jpg"
+        },
+        { 
+            "name" : "Study session for midterms",
+            "distance" : "1 mile",
+            "description" : "It's week 7, we're dying here!",
+            "imageURL" : "/static/img/study_at_geisel.jpg"
+        },
+        { 
+            "name" : "Lan Party",
+            "distance" : "24 mile",
+            "description" : "BYOC",
+            "imageURL" : "/static/img/lan_party.jpg"
+        },
+        { 
+            "name" : "SDHacks",
+            "distance" : "4 mile",
+            "description" : "Let's build cool things!",
+            "imageURL" : "/static/img/hackathon.jpg"
+        }
+    ]
+}

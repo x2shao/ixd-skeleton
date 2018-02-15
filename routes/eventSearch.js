@@ -2,7 +2,9 @@
 /*
  * GET home page.
  */
-
+var data = require('../data.json');
 exports.view = function(req, res){
-  res.render('eventSearch');
+  var id = req.params.id;
+  var event = data.events[id % data.events.length];
+  res.render('eventSearch',event);
 };

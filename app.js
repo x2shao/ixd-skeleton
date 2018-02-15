@@ -6,13 +6,16 @@
 var express = require('express');
 var http = require('http');
 var path = require('path');
-var handlebars = require('express3-handlebars')
+var handlebars = require('express3-handlebars');
 
 var index = require('./routes/index');
 var home = require('./routes/home');
 var eventSearch = require('./routes/eventSearch');
 var timeSelect = require('./routes/timeSelect');
 var feelingSelect = require('./routes/feelingSelect');
+var wip = require('./routes/wip');
+var map = require('./routes/map');
+var spider = require('./routes/spider');
 // Example route
 // var user = require('./routes/user');
 
@@ -31,7 +34,7 @@ app.use(express.methodOverride());
 app.use(express.cookieParser('IxD secret key'));
 app.use(express.session());
 app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
+app.use('/static', express.static(path.join(__dirname, 'public')));
 app.use('/scripts', express.static(__dirname + '/node_modules/'));
 
 // development only
@@ -44,6 +47,11 @@ app.get('/home', home.view);
 app.get('/eventSearch', eventSearch.view);
 app.get('/timeSelect', timeSelect.view);
 app.get('/feelingSelect', feelingSelect.view);
+app.get('/eventSearch', (req, res) => { res.redirect("/eventSearch/0")});
+app.get('/eventSearch/:id([0-9])', eventSearch.view);
+app.get('/wip',wip.view);
+app.get('/map',map.view);
+app.get('/spider', spider.view);
 // Example route
 // app.get('/users', user.list);
 
