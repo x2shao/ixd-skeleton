@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="/scripts/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/scripts/bootstrap-material-design/dist/css/bootstrap-material-design.css">
 	<link rel="stylesheet" href="/static/css/main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/static/css/button-theme.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -27,23 +27,26 @@
 				</button></a>
 		</div>
 	</nav>
+
 	
 
-	<div class="container" style="height:calc(100vh - 200px - 5pt)"><div class="card" style="text-align:center; margin-top:0; margin-left:0; margin-right:0; height:100%">
-		<img class="card-img-top crop img-responsive" src={{imageURL}} style="height:75%">
-		<div class="card-body">
-			<h4 class="card-text text-left">{{name}}</h4>
-			<h6 class="card-text text-left">{{distance}}</h6>
-			<p class="card-text text-left">{{description}}</p>
+	<div class="container" style="text-align:center; padding-top: 12.5%">
+		<div class="row" style="padding-top:0%">
+				<a href="eventSearch"> <div class="myButton" style="position: absolute; left: 12.5%;">**Tired**</div></a>
+				<a href="eventSearch"> <div class="myButton" style="position: absolute; right: 12.5%;">Adventurous</div></a>
 		</div>
-	</div></div>
-	<div id="outer">
-		<a><button class="btn inner rewind"><i class="fa fa-arrow-left"></i></button></a>
-		<a><button class="btn inner btn-circle btn-xl uninterested"><i class="fa fa-close"></i></button></a>
-		<!--<a href="/wip"><div class="inner"><button type="button" class="btn btn-secondary btn-circle btn-xl"><img src="/static/icons/heart.svg" height="15"/></button></div></a>-->
-		<a href="/map"><button class="btn inner btn-circle btn-xl"><i class="fa fa-heart" style="color:#000"></i></button></a>
-		<a href="/spider"><div class="inner"><button type="button" class="btn btn-secondary"><img src="/static/icons/ellipsis.svg" height="20"/></button></div></a>
-	
+		<div class="row" style="padding-top:50%">
+				<a href="eventSearch"> <div class="myButton" style="position: absolute; left: 12.5%;">*Hungry*</div></a>
+				<a href="eventSearch"> <div class="myButton" style="position: absolute; right: 12.5%;">Hardworking</div></a>
+
+		</div>
+	</div>
+
+
+	<div class="container" style="padding-top:37.5%">
+		<div class="row">
+				<a href="eventSearch"> <div class="myButton2" style="position:relative; left:50%; margin-left: -10px">SURPRISE ME</div></a>
+		</div>
 	</div>
 
 	
