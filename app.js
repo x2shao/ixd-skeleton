@@ -44,7 +44,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', index.view);
 app.get('/home', home.view);
-app.get('/eventSearch', eventSearch.view);
+//app.get('/eventSearch', eventSearch.view);
 app.get('/timeSelect', timeSelect.view);
 app.get('/feelingSelect', feelingSelect.view);
 app.get('/eventSearch', (req, res) => { res.redirect("/eventSearch/0")});
