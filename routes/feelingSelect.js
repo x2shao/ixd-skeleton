@@ -1,8 +1,6 @@
-
-/*
- * GET home page.
- */
+var tagnames = require('../public/json/tags.json');
 
 exports.view = function(req, res){
-  res.render('feelingSelect');
+	console.log(tagnames);
+  res.render('feelingSelect',tagnames);
 };
