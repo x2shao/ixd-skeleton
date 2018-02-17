@@ -47,19 +47,11 @@
 				</div>
 			</div>
 			
-			<div class="row login-row">
-				<div style="margin:auto;">
-				<!--<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">-->
-					<a href="home"><button type="button" class="btn btn-lg active btn-facebook">Facebook</button></a>
-					<!--<a href="home"><button type="button" class="">Facebook</button></a>-->
-					&nbsp;&nbsp;&nbsp;
-				<!--</div>
-				<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">-->
-					<a href="home"><button type="button" class="btn btn-lg active btn-google">Google+</button></a>
-					<!--<button type="button" class="">Google+</button>-->
-				</div>
-		
-			</div>
+		    <p class="facebookLogin">
+		    	Please login through Facebook
+		    	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                 </fb:login-button>
+            </p>
 		</div>
 	</div>
 
